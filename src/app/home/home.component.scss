@@ -1,0 +1,117 @@
+.featuresBlock{
+  display: flex;
+  align-items: center;
+  color: #383c43;
+  font-size: 16px;
+
+    & div{
+      padding: 35px;
+
+      & h1{
+        font-size: 45px;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      & button{
+        background-color: #4687ff;
+        color: white;
+      }
+
+      & img{
+        width: 100%;
+      }
+
+      & p{
+        margin: 25px 0;
+      }
+    }
+}
+
+
+
+.rewiewers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & img{
+    margin: 25px;
+  }
+}
+
+
+
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+
+  mat-card{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.01);
+
+     .price{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+     .price span{
+      font-weight: 600;
+      padding-right: 5px;
+      font-size: 20px;
+    }
+     .price h1{
+      display: inline;
+    }
+
+
+    mat-chip-list{
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    button{
+      margin: 25px 0;
+      width: 100%;
+    }
+
+    .card-bottom-text{
+      span:first-of-type{
+        color: red;
+        text-decoration: line-through;
+      }
+      span:last-of-type{
+        color: gray;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  mat-card:hover{
+   cursor: pointer;
+   border: 1px solid rgba(0,0,0,.2);
+   box-shadow: 3px 3px 3px 3px rgba(0,0,0,.1);
+
+  }
+}
+
+
+
+  mat-card.exclusive-deal{
+    border: 3px solid #4687ff !important;
+
+    button{
+      background-color: #4687ff;
+      color: white;
+    }
+
+    mat-chip{
+      background-color: pink;
+      color: red;
+    }
+}

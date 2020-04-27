@@ -1,0 +1,18 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
+nav img{
+  width: 150px;
+  margin-right: 100px;
+}
+
+.yourIP{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  font-weight: 400;
+}

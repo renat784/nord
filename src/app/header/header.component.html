@@ -1,0 +1,47 @@
+<div class="yourIP">
+  <span>Your IP: 188.172.220.70</span>
+  <span> · </span>
+  <span>ISP: Anexia</span>
+  <span> · </span>
+  <span>Your Status: <span style="color: red;">Unprotected</span></span>
+
+</div>
+<nav>
+  <img src="../../assets/Images/nordvpn-logo.png" alt="nordVpn logo">
+  <button mat-button>Pricing</button>
+  <button mat-button>Features</button>
+  <button mat-button>Servers</button>
+  <button mat-button>Pricing</button>
+  <button mat-button>VPN Apps</button>
+  <button mat-button>Blog</button>
+  <button mat-button>Business</button>
+  <span>|</span>
+
+  <button mat-button  [matMenuTriggerFor]="menu">Products</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Online security and privacy</span>
+      <span>NordVPN</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>voicemail</mat-icon>
+      <span>VPN business solutions</span>
+      <span>NordVPN Teams</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Password management</span>
+      <span>NordPass</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Protection for files</span>
+      <span>NordLocker</span>
+    </button>
+  </mat-menu>
+
+
+  <button mat-button>Help</button>
+  <button mat-button>Log In</button>
+</nav>
