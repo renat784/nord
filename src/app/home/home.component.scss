@@ -1,31 +1,88 @@
+.discount{
+  background-image: url(../../assets/Images/clouds.jpg);
+  background-size: cover;
+  display: flex;
+  color: white;
+
+    img{
+      width: 50%;
+    }
+
+    .discountTitle{
+      font-size: 50px;
+      line-height: normal;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    .countdown{
+      font-size: 35px;
+      margin: 45px 0;
+    }
+
+    button{
+      background-color: #f64f64;
+      color: white;
+      margin-bottom: 25px;
+    }
+}
+
+.column{
+  max-width:50%;
+  padding: 25px;
+}
+
+
+.rewiers-line{
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-evenly;
+  filter: grayscale(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .featuresBlock{
   display: flex;
   align-items: center;
   color: #383c43;
   font-size: 16px;
 
-    & div{
-      padding: 35px;
 
-      & h1{
+
+       h1{
         font-size: 45px;
         font-weight: 600;
         line-height: normal;
       }
 
-      & button{
+      button{
         background-color: #4687ff;
         color: white;
       }
 
-      & img{
+       img{
         width: 100%;
       }
 
-      & p{
+       p{
         margin: 25px 0;
+        line-height: 1.5;
       }
-    }
+
 }
 
 
