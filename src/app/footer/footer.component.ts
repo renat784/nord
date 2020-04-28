@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'google-play',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/google-play.svg'));
+
+    iconRegistry.addSvgIcon(
+      'app-store',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/app-store.svg'));
+    }
 
   ngOnInit(): void {
   }
