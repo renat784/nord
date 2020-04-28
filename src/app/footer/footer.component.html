@@ -16,6 +16,7 @@
   <div class="footer-links">
     <div>
       <mat-nav-list>
+        <h3 matSubheader>NORDVPN</h3>
         <mat-list-item>
           <a mat-list-item href="">Download</a>
         </mat-list-item>
@@ -48,6 +49,7 @@
 
     <div>
       <mat-nav-list>
+        <h3 matSubheader>ENGAGE</h3>
         <mat-list-item>
           <a mat-list-item href="">What Is a VPN?</a>
         </mat-list-item>
@@ -80,6 +82,7 @@
 
     <div>
       <mat-nav-list>
+        <h3 matSubheader>EARN MONEY</h3>
         <mat-list-item>
           <a mat-list-item href="">Affiliate</a>
         </mat-list-item>
@@ -92,6 +95,7 @@
       </mat-nav-list>
 
       <mat-nav-list>
+        <h3 matSubheader>PRIVACY TOOLS</h3>
         <mat-list-item>
           <a mat-list-item href="">Web Proxy</a>
         </mat-list-item>
@@ -106,6 +110,7 @@
 
     <div>
       <mat-nav-list>
+        <h3 matSubheader>PRODUCTS</h3>
         <mat-list-item>
           <a mat-list-item href="">NordVPN Teams</a>
         </mat-list-item>
@@ -116,9 +121,55 @@
           <a mat-list-item href="">NordLocker</a>
         </mat-list-item>
       </mat-nav-list>
-    </div>
 
+      <div>
+        <h3 matSubheader>LANGUAGE</h3>
+        <div style="padding-left: 30px;">
+          <mat-form-field>
+            <mat-label>Your language</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let lang of languages" [value]="lang">
+                {{lang}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div>
+        <h3 matSubheader>FOLLOW US</h3>
+        <div style="padding-left: 30px;">
+          <button class="followButton" mat-fab>
+            <mat-icon svgIcon="facebook"  aria-hidden="false" aria-label="facebook icon"></mat-icon>
+          </button>
+
+          <button class="followButton" mat-fab>
+            <mat-icon svgIcon="twitter"  aria-hidden="false" aria-label="twitter icon"></mat-icon>
+          </button>
+
+          <button class="followButton" mat-fab>
+            <mat-icon svgIcon="instagram"  aria-hidden="false" aria-label="instagram icon"></mat-icon>
+          </button>
+
+          <button class="followButton" mat-fab>
+            <mat-icon svgIcon="youtube"  aria-hidden="false" aria-label="youtube icon"></mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <div style="padding:50px 25px 100px 25px;display: flex;justify-content: space-between;">
+    <div style="color: gray;">
+      <div>We care about your privacy.</div>
+      <div>Copyright © 2012-2020 NordVPN.com support@nordvpn.com</div>
+    </div>
+    <div class="paycards">
+      <img src="../../assets/images/amex-card.svg">
+      <img src="../../assets/images/discover-card.svg">
+      <img src="../../assets/images/mastercard-card.svg">
+      <img src="../../assets/images/visa-card.svg">
+    </div>
+  </div>
 
 </footer>

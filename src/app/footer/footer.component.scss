@@ -1,6 +1,8 @@
 footer{
   background-color: #151922;
   color: white;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .footerTitle{
@@ -29,10 +31,28 @@ footer{
 
 .footer-links{
   display: flex;
+  justify-content: space-between;
 
-  justify-content: space-evenly;
-
+    mat-nav-list{
+      margin: 25px 0;
+    }
     a{
       color: white;
     }
+    a:hover{
+      color: rgba(255,255,255,0.5);
+    }
+    h3{
+      color: gray;
+      padding-left: 30px;
+    }
+}
+
+.followButton{
+  background-color: #2c3038;
+  margin-right: 10px;
+}
+
+.paycards img{
+  padding-left: 5px;
 }

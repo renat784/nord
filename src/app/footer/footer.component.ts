@@ -9,6 +9,14 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class FooterComponent implements OnInit {
 
+  languages = [
+    'English',
+    'Spanish',
+    'Ukrainian',
+    'Russian',
+    'Italiano'
+  ];
+
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
       'google-play',
@@ -17,6 +25,23 @@ export class FooterComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'app-store',
       sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/app-store.svg'));
+
+    iconRegistry.addSvgIcon(
+        'facebook',
+        sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/facebook.svg'));
+
+    iconRegistry.addSvgIcon(
+          'twitter',
+          sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/twitter.svg'));
+
+    iconRegistry.addSvgIcon(
+            'instagram',
+            sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/instagram.svg'));
+
+    iconRegistry.addSvgIcon(
+              'youtube',
+              sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/youtube.svg'));
+
     }
 
   ngOnInit(): void {

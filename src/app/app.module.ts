@@ -16,6 +16,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import {HttpClientModule} from '@angular/common/http';
 import {MatListModule} from '@angular/material/list';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatSliderModule,
     MatListModule,
+    MatSelectModule,
     MatIconModule,
     HttpClientModule,
     MatCardModule,
