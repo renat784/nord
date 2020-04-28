@@ -7,7 +7,7 @@
 
 </div>
 <nav>
-  <img src="../../assets/Images/nordvpn-logo.png" alt="nordVpn logo">
+  <img src="../../assets/images/nordvpn-logo.png" alt="nordVpn logo">
   <button mat-button>Pricing</button>
   <button mat-button>Features</button>
   <button mat-button>Servers</button>
@@ -15,33 +15,55 @@
   <button mat-button>VPN Apps</button>
   <button mat-button>Blog</button>
   <button mat-button>Business</button>
-  <span>|</span>
 
-  <button mat-button  [matMenuTriggerFor]="menu">Products</button>
+  <div class="divider"></div>
+
+  <button mat-button  [matMenuTriggerFor]="menu">
+    <mat-icon>apps</mat-icon>
+    <span style="padding-left: 10px;">Products</span>
+  </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Online security and privacy</span>
-      <span>NordVPN</span>
+    <button mat-button class="menuItem">
+      <mat-icon svgIcon="nord-vpn" aria-hidden="false" aria-label="nord vpn icon"></mat-icon>
+
+      <div class="menu-item-text">
+        <div>Online security and privacy</div>
+        <span>NordVPN</span>
+      </div>
     </button>
-    <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>VPN business solutions</span>
-      <span>NordVPN Teams</span>
+
+    <button mat-button class="menuItem">
+      <mat-icon  svgIcon="nord-vpn-teams" aria-hidden="false" aria-label="nord vpn teams icon"></mat-icon>
+      <div class="menu-item-text">
+        <div>VPN business solutions</div>
+        <span>NordVPN Teams</span>
+      </div>
     </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Password management</span>
-      <span>NordPass</span>
+
+    <button mat-button class="menuItem">
+      <mat-icon svgIcon="nord-pass" aria-hidden="false" aria-label="nord pass icon"></mat-icon>
+      <div class="menu-item-text">
+        <div>Password management</div>
+        <span>NordPass</span>
+      </div>
     </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Protection for files</span>
-      <span>NordLocker</span>
+
+    <button mat-button class="menuItem">
+      <mat-icon svgIcon="nord-locker" aria-hidden="false" aria-label="nord locker icon"></mat-icon>
+      <div class="menu-item-text">
+        <div>Protection for files</div>
+        <span>NordLocker</span>
+      </div>
     </button>
   </mat-menu>
 
 
-  <button mat-button>Help</button>
-  <button mat-button>Log In</button>
+  <button mat-button>
+    <mat-icon>help</mat-icon>
+    <span style="padding-left: 10px;">Help</span>
+  </button>
+  <button mat-button>
+    <mat-icon>account_circle</mat-icon>
+    <span style="padding-left: 10px;">Log In</span>
+  </button>
 </nav>

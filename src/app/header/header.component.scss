@@ -16,3 +16,32 @@ nav img{
   padding: 5px 0;
   font-weight: 400;
 }
+
+.divider{
+  width: 1px;
+  background-color: black;
+  margin: 5px 10px;
+}
+
+
+.menuItem{
+  width: 100% ;
+  text-align: left;
+}
+
+.menu-item-text{
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+
+  div{
+    padding-bottom: 20px;
+  }
+  span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: gray;
+    font-size: 11px;
+  }
+}

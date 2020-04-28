@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'nord-vpn',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordvpn-blue.svg'));
+
+    iconRegistry.addSvgIcon(
+      'nord-vpn-teams',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordvpn-teams.svg'));
+
+    iconRegistry.addSvgIcon(
+      'nord-pass',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordpass-green.svg'));
+
+    iconRegistry.addSvgIcon(
+      'nord-locker',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordlocker-48.svg'));
+
+  }
 
   ngOnInit(): void {
   }

@@ -14,7 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import {MatChipsModule} from '@angular/material/chips';
     BrowserAnimationsModule,
     MatSliderModule,
     MatIconModule,
+    HttpClientModule,
     MatCardModule,
     MatChipsModule,
     MatButtonModule,

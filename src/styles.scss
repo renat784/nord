@@ -29,7 +29,7 @@ $nord-theme: mat-light-theme($nord-primary, $nord-accent, $nord-warn);
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 16px;}
 
 h1{
   font-size: 40px !important;
