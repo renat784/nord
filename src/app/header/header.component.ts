@@ -31,4 +31,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // opens external url in new browser tab
+  goToUrl(url){
+    window.open(url, '_blank');
+  }
 }

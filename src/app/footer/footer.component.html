@@ -127,8 +127,8 @@
         <div style="padding-left: 30px;">
           <mat-form-field>
             <mat-label>Your language</mat-label>
-            <mat-select>
-              <mat-option *ngFor="let lang of languages" [value]="lang">
+            <mat-select [(value)]="selected">
+              <mat-option  *ngFor="let lang of languages" [value]="lang">
                 {{lang}}
               </mat-option>
             </mat-select>

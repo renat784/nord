@@ -17,13 +17,33 @@ import {MatChipsModule} from '@angular/material/chips';
 import {HttpClientModule} from '@angular/common/http';
 import {MatListModule} from '@angular/material/list';
 import {MatSelectModule} from '@angular/material/select';
+import { PricingComponent } from './pricing/pricing.component';
+import { FeaturesComponent } from './features/features.component';
+import { ServersComponent } from './servers/servers.component';
+import { DownloadComponent } from './download/download.component';
+import { BlogComponent } from './blog/blog.component';
+import { LoginComponent } from './login/login.component';
+import { OrderComponent } from './order/order.component';
+import { PaymentComponent } from './payment/payment.component';
+import { SupportComponent } from './support/support.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PricingComponent,
+    FeaturesComponent,
+    ServersComponent,
+    DownloadComponent,
+    BlogComponent,
+    LoginComponent,
+    OrderComponent,
+    PaymentComponent,
+    SupportComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +60,17 @@ import {MatSelectModule} from '@angular/material/select';
     MatMenuModule,
     RouterModule.forRoot(
       [
-        {path: '', component: HomeComponent}
+        {path: '', component: HomeComponent},
+        {path: 'pricing', component: PricingComponent},
+        {path: 'features', component: FeaturesComponent},
+        {path: 'servers', component: ServersComponent},
+        {path: 'download', component: DownloadComponent},
+        {path: 'blog', component: BlogComponent},
+        {path: 'support', component: SupportComponent},
+        {path: 'login', component: LoginComponent},
+        {path: 'order', component: OrderComponent},
+        {path: 'order/payment', component: PaymentComponent},
+        {path: '*', component: ErrorComponent}
       ]
     )
   ],

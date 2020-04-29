@@ -4,17 +4,18 @@
   <span>ISP: Anexia</span>
   <span> · </span>
   <span>Your Status: <span style="color: red;">Unprotected</span></span>
-
 </div>
 <nav>
-  <img src="../../assets/images/nordvpn-logo.png" alt="nordVpn logo">
-  <button mat-button>Pricing</button>
-  <button mat-button>Features</button>
-  <button mat-button>Servers</button>
-  <button mat-button>Pricing</button>
-  <button mat-button>VPN Apps</button>
-  <button mat-button>Blog</button>
-  <button mat-button>Business</button>
+  <a [routerLink]="['/']">
+    <img src="../../assets/images/nordvpn-logo.png"  alt="nordVpn logo">
+  </a>
+
+  <button mat-button [routerLink]="['/pricing']">Pricing</button>
+  <button mat-button [routerLink]="['/features']">Features</button>
+  <button mat-button [routerLink]="['/servers']">Servers</button>
+  <button mat-button [routerLink]="['/download']">VPN Apps</button>
+  <button mat-button [routerLink]="['/blog']">Blog</button>
+  <button mat-button (click)="goToUrl('https://nordvpnteams.com/')">Business</button>
 
   <div class="divider"></div>
 
@@ -22,17 +23,17 @@
     <mat-icon>apps</mat-icon>
     <span style="padding-left: 10px;">Products</span>
   </button>
-  <mat-menu #menu="matMenu">
-    <button mat-button class="menuItem">
-      <mat-icon svgIcon="nord-vpn" aria-hidden="false" aria-label="nord vpn icon"></mat-icon>
 
+  <mat-menu #menu="matMenu">
+    <button mat-button class="menuItem" disabled (click)="goToUrl('https://nordvpn.com/')">
+      <mat-icon svgIcon="nord-vpn" aria-hidden="false" aria-label="nord vpn icon"></mat-icon>
       <div class="menu-item-text">
         <div>Online security and privacy</div>
         <span>NordVPN</span>
       </div>
     </button>
 
-    <button mat-button class="menuItem">
+    <button mat-button class="menuItem" (click)="goToUrl('https://nordvpnteams.com/')">
       <mat-icon  svgIcon="nord-vpn-teams" aria-hidden="false" aria-label="nord vpn teams icon"></mat-icon>
       <div class="menu-item-text">
         <div>VPN business solutions</div>
@@ -40,7 +41,7 @@
       </div>
     </button>
 
-    <button mat-button class="menuItem">
+    <button mat-button class="menuItem" (click)="goToUrl('https://nordpass.com/')">
       <mat-icon svgIcon="nord-pass" aria-hidden="false" aria-label="nord pass icon"></mat-icon>
       <div class="menu-item-text">
         <div>Password management</div>
@@ -48,7 +49,7 @@
       </div>
     </button>
 
-    <button mat-button class="menuItem">
+    <button mat-button class="menuItem" (click)="goToUrl('https://nordlocker.com/')">
       <mat-icon svgIcon="nord-locker" aria-hidden="false" aria-label="nord locker icon"></mat-icon>
       <div class="menu-item-text">
         <div>Protection for files</div>
@@ -58,11 +59,11 @@
   </mat-menu>
 
 
-  <button mat-button>
+  <button mat-button [routerLink]="['/support']">
     <mat-icon>help</mat-icon>
     <span style="padding-left: 10px;">Help</span>
   </button>
-  <button mat-button>
+  <button mat-button [routerLink]="['/login']">
     <mat-icon>account_circle</mat-icon>
     <span style="padding-left: 10px;">Log In</span>
   </button>

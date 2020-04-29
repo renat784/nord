@@ -8,6 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  selected = 'English';
 
   languages = [
     'English',
