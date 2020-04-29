@@ -13,9 +13,6 @@ export class LoginComponent implements OnInit {
   hide = true;
   public loginForm: FormGroup;
 
-  name = new FormControl('', [Validators.required, Validators.maxLength(25)]);
-  password = new FormControl('', [Validators.required, Validators.minLength(6), Validators.maxLength(25)]);
-
   public hasError = (controlName: string, errorName: string) => {
     return this.loginForm.controls[controlName].hasError(errorName);
   }
