@@ -1,1 +1,31 @@
-<p>login works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="logIn(loginForm.value)">
+  <h2>Log in</h2>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Username or email address</mat-label>
+    <input matInput type="text" formControlName="name">
+    <mat-error *ngIf="hasError('name', 'required')">Username or email is required</mat-error>
+    <mat-error *ngIf="hasError('name', 'maxlength')">You have more than 25 characters</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput formControlName="password" [type]="hide ? 'password' : 'text'">
+    <mat-error *ngIf="hasError('password', 'required')">Password is required</mat-error>
+    <mat-error *ngIf="hasError('password', 'maxlength')">You have more than 25 characters</mat-error>
+    <mat-error *ngIf="hasError('password', 'minlength')">You password must have more than 6 characters</mat-error>
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <button class="btn-submit" mat-flat-button [disabled]="!loginForm.valid">Log In</button>
+
+  <p>
+    <a [routerLink]="['/lost-password']">Forgot your password?</a>
+  </p>
+  <p>
+    <span>Don’t have an account yet?</span>
+    <a [routerLink]="['/order']">Sign up</a>
+  </p>
+</form>
