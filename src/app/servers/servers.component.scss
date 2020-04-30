@@ -1,0 +1,43 @@
+.serverTop{
+  background-image: url('../../assets/images/world.jpg');
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+    h1{
+      margin-bottom: 25px;
+    }
+    button:first-of-type{
+      margin-right: 15px;
+      margin-bottom: 20px;
+    }
+    p span{
+      margin-left: 10px;
+      vertical-align: super;
+    }
+}
+
+
+.userFeedBack{
+  margin:50px 0;
+    display: flex;
+    justify-content: space-around;
+
+    mat-card{
+      width: 325px;
+
+        .avatar{
+          background-size: cover;
+        }
+        img{
+          width: 25px;
+          position: absolute;
+          right: 15px;
+        }
+    }
+}

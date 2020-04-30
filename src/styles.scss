@@ -79,12 +79,22 @@ a.blackLink:hover{
 
 .redButton{
   color: white;
-  padding: 5px 15px !important;
+
   background-color: $red;
 }
 .redButton:hover{
   color: white;
   background-color: rgba($color: $red, $alpha: 0.8);
+}
+
+.redButtonOutLine{
+  color: $red;
+  border: 1px solid $red !important;
+  background-color: transparent;
+}
+.redButtonOutLine:hover{
+  color: white;
+  background-color: $red;
 }
 
 .center{
