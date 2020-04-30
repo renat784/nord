@@ -27,10 +27,7 @@
   }
 }
 
-.column {
-  max-width: 50%;
-  padding: 25px;
-}
+
 
 .rewiers-line {
   background-color: #f8f8f8;
@@ -65,32 +62,7 @@
   }
 }
 
-.featuresBlock {
-  display: flex;
-  align-items: center;
-  color: #383c43;
-  font-size: 16px;
 
-  h1 {
-    font-size: 45px;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  button {
-    background-color: #4687ff;
-    color: white;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  p {
-    margin: 25px 0;
-    line-height: 1.5;
-  }
-}
 
 .rewiewers {
   display: flex;

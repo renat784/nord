@@ -28,22 +28,71 @@ $nord-theme: mat-light-theme($nord-primary, $nord-accent, $nord-warn);
 
 /* You can add global styles to this file, and also import other style files */
 
+$black: #383c43;
+$blue: #4687ff;
+$red: #f64f64;
+$gray: gray;
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 16px;}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: $black;
+}
 
 h1{
   font-size: 40px !important;
   font-weight: 600 !important;
-  color: #383c43 !important;
+
 }
+
 h2{
   font-size: 30px !important;
   font-weight: 600 !important;
-  color: #383c43 !important;
+
+}
+
+h3{
+  font-size: 20px !important;
+  font-weight: 600 !important;
+
+}
+
+a{
+  color: $blue;
+  text-decoration: none;
+}
+a:hover{
+  color: rgba($color: $blue, $alpha: 0.8);
+}
+
+a.blackLink{
+  color: $black;
+  text-decoration: underline;
+}
+
+a.blackLink:hover{
+  color: $red;
+  text-decoration: underline;
+}
+
+.redButton{
+  color: white;
+  padding: 5px 15px !important;
+  background-color: $red;
+}
+.redButton:hover{
+  color: white;
+  background-color: rgba($color: $red, $alpha: 0.8);
 }
 
 .center{
   text-align: center;
+}
+
+.gray{
+  color: gray;
 }
 
 .grayText{
@@ -53,3 +102,40 @@ h2{
 .grayBack{
   background-color: #2c3038;
 }
+
+
+
+.featuresBlock {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 100px 0;
+
+  h1 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  button {
+    background-color: $blue;
+    color: white;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin: 25px 0;
+    line-height: 1.5;
+  }
+}
+
+.column {
+  width: 50%;
+  padding: 25px;
+}
+
+
+

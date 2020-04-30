@@ -31,6 +31,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LostPasswordComponent } from './lost-password/lost-password.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { LostPasswordComponent } from './lost-password/lost-password.component';
     FormsModule,
     ReactiveFormsModule,
     MatListModule,
+    MatExpansionModule,
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
