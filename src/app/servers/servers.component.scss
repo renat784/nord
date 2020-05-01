@@ -23,24 +23,7 @@
 }
 
 
-.userFeedBack{
-  margin:50px 0;
-    display: flex;
-    justify-content: space-around;
 
-    mat-card{
-      width: 325px;
-
-        .avatar{
-          background-size: cover;
-        }
-        img{
-          width: 25px;
-          position: absolute;
-          right: 15px;
-        }
-    }
-}
 
 
 .serverTypes{

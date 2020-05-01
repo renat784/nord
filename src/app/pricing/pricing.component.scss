@@ -157,32 +157,3 @@ mat-card.exclusive-deal {
 
 
 
-.moneyBack{
-  display: flex;
-  align-items: center;
-  margin: 50px 0;
-
-    div:first-of-type{
-      text-align: center;
-    }
-
-    div{
-      width: 50%;
-      padding: 25px;
-    }
-    p{
-      color: gray;
-      margin: 25px 0;
-    }
-    img{
-      width: 50%;
-
-    }
-    button{
-      background-color: #f64f64;
-      color: white;
-    }
-    button:hover{
-      background-color:rgba($color: #f64f64, $alpha: 0.8) ;
-    }
-}

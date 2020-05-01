@@ -1,0 +1,30 @@
+.osCard{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+    div{
+      width: 10%;
+      margin: 25px;
+    }
+
+    mat-card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    mat-card:hover{
+      box-shadow: 2px 2px 2px 2px gray;
+    }
+
+    img{
+      width: 50px;
+    }
+    p{
+      margin-top: 25px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+
+}
