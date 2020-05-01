@@ -1,0 +1,104 @@
+.search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #006ea7;
+  height: 350px;
+
+    form{
+      width: 50%;
+      margin: 25px auto;
+
+        mat-form-field{
+          width: 100%;
+
+            mat-label{
+              color: black;
+              font-weight: 500;
+            }
+            input{
+              color: white;
+              font-size: 16px;
+              font-weight: 500;
+            }
+            mat-hint{
+              text-align: right;
+              color: white;
+            }
+            mat-icon{
+              cursor: pointer;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.category{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+
+    div{
+      width: 20%;
+
+      a{
+        color: #383c43;
+      }
+      p{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      span{
+        color: gray;
+      }
+      mat-card{
+        height: 80px;
+        margin-bottom: 25px;
+
+          mat-icon{
+            font-size: 70px;
+            display: block;
+            width: auto;
+          }
+          img{
+            width: 75px;
+            padding: 25px;
+          }
+      }
+      mat-card:hover{
+        box-shadow: 2px 2px 2px 2px gray;
+      }
+    }
+}
+
+
+
+.topQuestions{
+  width: 60%;
+  margin: 150px auto;
+
+    h1{
+      margin-bottom: 100px;
+      text-align: center;
+    }
+    div a{
+      display: flex;
+      color: #383c43;
+      font-size: 16px;
+      justify-content: space-between;
+      margin: 30px 0;
+      font-weight: 500;
+
+      &:hover{
+        color:#4687ff;
+      }
+    }
+}

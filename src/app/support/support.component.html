@@ -1,1 +1,104 @@
-<p>support works!</p>
+<div class="search">
+  <h1 style="color: white;">Hi, how can we help you?</h1>
+
+    <form>
+      <mat-form-field>
+        <mat-label>Search</mat-label>
+        <input [(ngModel)]="searchWord" name="searchWord" (keydown.enter)="search()" matInput placeholder="what are you looking for?">
+        <mat-icon *ngIf="searchWord != ''"  (click)="searchWord=''" matSuffix>clear</mat-icon>
+        <mat-hint>type a word and press enter</mat-hint>
+      </mat-form-field>
+    </form>
+
+
+</div>
+
+
+<div class="center" style="margin: 150px 0;padding: 25px;">
+  <h1>Choose main category</h1>
+  <p class="gray">Dig deeper and easily find your answers.</p>
+  <div class="category">
+    <div>
+      <a [routerLink]="['/routePath']">
+        <mat-card>
+          <mat-icon>question_answer</mat-icon>
+        </mat-card>
+        <p>FAQ</p>
+        <span>All you need to know about the first steps with NordVPN.</span>
+      </a>
+    </div>
+
+    <div>
+      <a [routerLink]="['/routePath']">
+        <mat-card>
+          <mat-icon>assignment</mat-icon>
+        </mat-card>
+        <p>General info</p>
+        <span>Learn more about the world's leading VPN service.</span>
+      </a>
+    </div>
+
+    <div>
+      <a [routerLink]="['/routePath']">
+        <mat-card>
+          <mat-icon>payment</mat-icon>
+        </mat-card>
+        <p>Billing</p>
+        <span>All the information on managing your payments and subscriptions.</span>
+      </a>
+    </div>
+
+    <div>
+      <a [routerLink]="['/routePath']">
+        <mat-card>
+          <mat-icon>build</mat-icon>
+        </mat-card>
+        <p>Connectivity</p>
+        <span>All the information on how to troubleshoot the connectivity issues</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="topQuestions">
+  <h1>Top 5 questions</h1>
+  <div>
+    <a [routerLink]="['/routePath']">
+      <span>How to securely watch Netflix with NordVPN?</span>
+      <span>&gt;</span>
+    </a>
+    <hr>
+  </div>
+
+  <div>
+    <a [routerLink]="['/routePath']">
+      <span>How can I reach NordVPN customer support?</span>
+      <span>&gt;</span>
+    </a>
+    <hr>
+  </div>
+
+  <div>
+    <a [routerLink]="['/routePath']">
+      <span>What is your money-back policy?</span>
+      <span>&gt;</span>
+    </a>
+    <hr>
+  </div>
+
+  <div>
+    <a [routerLink]="['/routePath']">
+      <span>Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint</span>
+      <span>&gt;</span>
+    </a>
+    <hr>
+  </div>
+
+  <div>
+    <a [routerLink]="['/routePath']">
+      <span>Setting up a router with NordVPN</span>
+      <span>&gt;</span>
+    </a>
+    <hr>
+  </div>
+</div>
