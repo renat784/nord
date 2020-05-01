@@ -97,6 +97,15 @@ a.blackLink:hover{
   background-color: $red;
 }
 
+.blueButton{
+  color: white;
+  background-color: $blue;
+}
+.blueButton:hover{
+  color: white;
+  background-color: rgba($color: $blue, $alpha: 0.8);
+}
+
 .center{
   text-align: center;
 }
@@ -125,11 +134,6 @@ a.blackLink:hover{
     font-size: 45px;
     font-weight: 600;
     line-height: normal;
-  }
-
-  button {
-    background-color: $blue;
-    color: white;
   }
 
   img {
