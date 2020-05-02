@@ -12,3 +12,15 @@ export interface Country {
   serversCount: number;
   serverFeatures: string[];
 }
+
+
+export interface Article{
+  image: string;
+  title: string;
+  timeToRead: string;
+  authorName: string;
+  authorAvatar: string;
+  articleDate: string;
+}
+
+

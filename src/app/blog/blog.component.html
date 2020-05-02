@@ -1,264 +1,89 @@
 <div style="width: 80%;margin: 100px auto;">
 
+  <a [routerLink]="['/routePath']">
+    <mat-card class="horizontal_card featured_article">
+      <div class="col"
+        style="background-image: url('../../assets/images/blog/nordlynx_lean-mean-1200x675-1.jpg');">
+      </div>
+      <div class="col">
+        <mat-card-content>
+          <p class="featured">
+            <mat-icon>star</mat-icon>
+            <span>Featured article</span>
+          </p>
+          <p class="article">
+            Proudly announcing a major upgrade to NordVPN service — NordLynx
+          </p>
+          <small>Service Updates · 2 min read</small>
+        </mat-card-content>
+        <mat-card-header>
+          <div mat-card-avatar
+            style="background-image: url('../../assets/images/blog/male.jpeg');"></div>
+          <mat-card-title>Stephen Levine</mat-card-title>
+          <mat-card-subtitle>Apr 22, 2020</mat-card-subtitle>
+        </mat-card-header>
+      </div>
+    </mat-card>
+  </a>
 
-<a [routerLink]="['/routePath']">
-  <mat-card class="horizontal_card featured_article">
-    <div class="col"
-      style="background-image: url('../../assets/images/blog/nordlynx_lean-mean-1200x675-1.jpg');background-size: cover;">
+
+  <div style="margin: 100px 0;">
+    <h3>Popular articles</h3>
+    <div style="display: flex;">
+      <a [routerLink]="['/routePath']" *ngFor="let article of popularArticles">
+        <mat-card class="vertical_card">
+          <div>
+            <img mat-card-image src="../../assets/images/blog/{{article.image}}">
+            <mat-card-content>
+              <p>
+                {{article.title}}
+              </p>
+              <small>{{article.articleDate}}</small>
+            </mat-card-content>
+          </div>
+          <div>
+            <mat-card-header>
+              <div mat-card-avatar style="background-image: url('../../assets/images/blog/{{article.authorAvatar}}');">
+              </div>
+              <mat-card-title>{{article.authorName}}</mat-card-title>
+              <mat-card-subtitle>{{article.articleDate}}</mat-card-subtitle>
+            </mat-card-header>
+          </div>
+        </mat-card>
+      </a>
     </div>
-    <div class="col">
-      <mat-card-content >
-        <p class="featured">
-          <mat-icon>star</mat-icon>
-          <span>Featured article</span>
-        </p>
-        <p class="article">
-          Proudly announcing a major upgrade to NordVPN service — NordLynx
-        </p>
-        <small>Service Updates · 2 min read</small>
-      </mat-card-content>
-      <mat-card-header>
-        <div mat-card-avatar style="background-image: url('../../assets/images/blog/male.jpeg');background-size: cover;"></div>
-        <mat-card-title>Stephen Levine</mat-card-title>
-        <mat-card-subtitle>Apr 22, 2020</mat-card-subtitle>
-      </mat-card-header>
-    </div>
-  </mat-card>
-</a>
-
-
-<div style="margin: 100px 0;">
-  <h3>Recent articles</h3>
-  <div>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/third-party-cookies.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              Third-party cookies, and why you should delete them
-            </p>
-            <small>How-To · 3 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/male.jpeg');"></div>
-            <mat-card-title>Paul Black</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="['/routePath']">
-      <mat-card class="horizontal_card">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/Catfishing-Featured.jpg');">
-        </div>
-        <div class="col">
-          <mat-card-content >
-            <p class="article">
-              What is catfishing and how do you spot it?
-            </p>
-            <small>How-To · 5 min read</small>
-          </mat-card-content>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../../assets/images/blog/female.png');"></div>
-            <mat-card-title>Anna Rasmussen</mat-card-title>
-            <mat-card-subtitle>Apr 30, 2020</mat-card-subtitle>
-          </mat-card-header>
-        </div>
-      </mat-card>
-    </a>
-
-
-
   </div>
-</div>
 
 
+  <div style="margin: 100px 0;">
+    <h3>Recent articles</h3>
+    <div>
+      <a [routerLink]="['/routePath']" *ngFor="let article of articles">
+        <mat-card class="horizontal_card">
+          <div class="col" style="background-image: url('../../assets/images/blog/{{article.image}}');">
+          </div>
+          <div class="col">
+            <mat-card-content>
+              <p class="article">
+                {{article.title}}
+              </p>
+              <small>{{article.timeToRead}}</small>
+            </mat-card-content>
+            <mat-card-header>
+              <div mat-card-avatar style="background-image: url('../../assets/images/blog/{{article.authorAvatar}}');">
+              </div>
+              <mat-card-title>{{article.authorName}}</mat-card-title>
+              <mat-card-subtitle>{{article.articleDate}}</mat-card-subtitle>
+            </mat-card-header>
+          </div>
+        </mat-card>
+      </a>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
+  <div style="display: flex;justify-content: center;margin: 100px 0;">
+    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+  </div>
 
 </div>

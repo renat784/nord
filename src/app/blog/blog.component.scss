@@ -78,3 +78,38 @@ mat-card.horizontal_card{
     }
 }
 
+mat-card.vertical_card{
+  height: 375px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+      mat-card-content{
+          small{
+            color: gray;
+          }
+          p{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: normal;
+          }
+      }
+
+      mat-card-header{
+        margin-top: 25px;
+
+          div{
+            background-size: cover;
+          }
+          mat-card-title{
+            font-size: 12px;
+            color: gray;
+            font-weight: 500;
+          }
+          mat-card-subtitle{
+            font-size: 12px;
+            color: gray;
+          }
+      }
+}
