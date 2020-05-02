@@ -34,6 +34,7 @@ import { LostPasswordComponent } from './lost-password/lost-password.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
+
 @NgModule({
   declarations: [
     AppComponent,
