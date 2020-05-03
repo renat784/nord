@@ -26,14 +26,18 @@ $nord-theme: mat-light-theme($nord-primary, $nord-accent, $nord-warn);
 // that you are using.
 @include angular-material-theme($nord-theme);
 
-/* You can add global styles to this file, and also import other style files */
+
 
 $black: #383c43;
 $blue: #4687ff;
 $red: #f64f64;
 $gray: gray;
+$yellow: #ffcc01;
+
+$grayBack: #f8f8f8;
 
 html, body { height: 100%; }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -50,15 +54,15 @@ h1{
 h2{
   font-size: 30px !important;
   font-weight: 600 !important;
-
 }
 
 h3{
   font-size: 20px !important;
   font-weight: 600 !important;
-
 }
 
+
+// links:
 a{
   color: $blue;
   text-decoration: none;
@@ -67,32 +71,34 @@ a:hover{
   color: rgba($color: $blue, $alpha: 0.8);
 }
 
-a.blackLink{
+
+.blackLink{
   color: $black;
   text-decoration: underline;
 }
-
-a.blackLink:hover{
+.blackLink:hover{
   color: $red;
   text-decoration: underline;
 }
+
 
 .blackLink_2{
   color: $black;
 }
-
 .blackLink_2:hover{
   color: $red ;
 }
 
+
 .redLink{
   color: $red;
 }
-
 .redLink:hover{
   color: rgba($color: $red, $alpha: 0.8);
 }
 
+
+// buttons:
 .blackButton{
   color: white;
   background-color: $black;
@@ -102,9 +108,9 @@ a.blackLink:hover{
   background-color: rgba($color: $black, $alpha: 0.8);
 }
 
+
 .redButton{
   color: white;
-
   background-color: $red;
 }
 .redButton:hover{
@@ -122,6 +128,7 @@ a.blackLink:hover{
   background-color: $red;
 }
 
+
 .blueButton{
   color: white;
   background-color: $blue;
@@ -130,6 +137,7 @@ a.blackLink:hover{
   color: white;
   background-color: rgba($color: $blue, $alpha: 0.8);
 }
+
 
 .center{
   text-align: center;
@@ -140,7 +148,7 @@ a.blackLink:hover{
 }
 
 .gray{
-  color: gray;
+  color: $gray;
 }
 
 .grayText{
@@ -172,6 +180,11 @@ a.blackLink:hover{
   p {
     margin: 25px 0;
     line-height: 1.5;
+  }
+
+  div mat-icon{
+    color: $blue;
+    margin-bottom: 20px;
   }
 }
 
@@ -232,4 +245,25 @@ a.blackLink:hover{
     button:hover{
       background-color:rgba($color: #f64f64, $alpha: 0.8) ;
     }
+}
+
+
+
+.alertBlock{
+  padding: 25px;
+  color: #ff7e23;
+  border: 1px solid #ff7e23;
+  background-color: #ffe5d3;
+  border-radius: 5px;
+  font-weight: 500;
+
+        span{
+          margin-left: 10px;
+          vertical-align: super;
+        }
+}
+
+
+mat-card:hover{
+  box-shadow: 2px 2px 2px 2px gray !important;
 }

@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .search{
   display: flex;
   flex-direction: column;
@@ -6,31 +8,38 @@
   background-color: #006ea7;
   height: 350px;
 
+    h1{
+      color: white;
+    }
+
     form{
       width: 50%;
       margin: 25px auto;
 
-        mat-form-field{
-          width: 100%;
+            mat-form-field{
+              width: 100%;
 
-            mat-label{
-              color: black;
-              font-weight: 500;
-            }
-            input{
-              color: white;
-              font-size: 16px;
-              font-weight: 500;
-            }
-            mat-hint{
-              text-align: right;
-              color: white;
-            }
-            mat-icon{
-              cursor: pointer;
-            }
+                    mat-label{
+                      color: $black;
+                      font-weight: 500;
+                    }
 
-        }
+                    input{
+                      color: white;
+                      font-size: 16px;
+                      font-weight: 500;
+                    }
+
+                    mat-hint{
+                      text-align: right;
+                      color: white;
+                    }
+
+                    mat-icon{
+                      cursor: pointer;
+                    }
+
+            }
     }
 }
 
@@ -49,33 +58,33 @@
     div{
       width: 20%;
 
-      a{
-        color: #383c43;
-      }
-      p{
-        font-size: 18px;
-        font-weight: 500;
-      }
-      span{
-        color: gray;
-      }
-      mat-card{
-        height: 80px;
-        margin-bottom: 25px;
+          a{
+            color: $black;
 
-          mat-icon{
-            font-size: 70px;
-            display: block;
-            width: auto;
+                mat-card{
+                  height: 80px;
+                  margin-bottom: 25px;
+
+                        mat-icon{
+                          font-size: 70px;
+                          display: block;
+                          width: auto;
+                        }
+                }
+
+                mat-card:hover{
+                  box-shadow: 2px 2px 2px 2px $gray;
+                }
+
+                p{
+                  font-size: 18px;
+                  font-weight: 500;
+                }
+
+                span{
+                  color: $gray;
+                }
           }
-          img{
-            width: 75px;
-            padding: 25px;
-          }
-      }
-      mat-card:hover{
-        box-shadow: 2px 2px 2px 2px gray;
-      }
     }
 }
 
@@ -91,14 +100,14 @@
     }
     div a{
       display: flex;
-      color: #383c43;
+      color: $black;
       font-size: 16px;
       justify-content: space-between;
       margin: 30px 0;
       font-weight: 500;
 
       &:hover{
-        color:#4687ff;
+        color: $blue;
       }
     }
 }

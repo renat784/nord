@@ -46,7 +46,7 @@
       </mat-card>
     </a>
 
-
+    <!-- generates 3 vertical cards in the row -->
     <div style="margin: 100px 0;">
       <h3>Popular articles</h3>
       <div style="display: flex;">
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-
+    <!-- generates horizontal cards -->
     <div style="margin: 100px 0;">
       <h3>Recent articles</h3>
       <div>
@@ -101,6 +101,7 @@
       </div>
     </div>
 
+    <!-- pagination -->
     <div style="display: flex;justify-content: center;margin: 100px 0;">
       <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
       </mat-paginator>

@@ -1,39 +1,20 @@
+@import '../../styles.scss';
+
 form{
   margin: 100px auto;
   width: 30%;
 
-  h2{
-    margin-bottom: 50px;
-  }
+      h2{
+        margin-bottom: 50px;
+      }
 
-  mat-form-field,
-  .btn-submit{
-    width: 100%;
-    margin-bottom: 25px;
-  }
+      mat-form-field, .blueButton{
+        width: 100%;
+        margin-bottom: 25px;
+      }
 
-  .btn-submit{
-    background-color: #4687ff;
-    padding: 5px 0;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  p a{
-    color: #4687ff;
-    text-decoration: none;
-  }
-  p span{
-    margin-right: 10px;
-    color: gray;
-  }
-
-  p a:hover{
-    color: rgba($color: #4687ff, $alpha: 0.8);
-  }
-
-  .btn-submit:hover{
-    background-color: rgba($color: #4687ff, $alpha: 0.8);
-  }
+      p span{
+        margin-right: 10px;
+        color: $gray;
+      }
 }
