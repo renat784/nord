@@ -1,29 +1,19 @@
-
-
-
-<div style="background-color: #f8f8f8;">
-
-
-
+<div class="grayBack">
   <div style="width: 80%;margin: auto;">
 
-    <div style="padding: 30px 0;">
-
-      <div class="links">
-        <span>Discover our blog:</span>
-        <a class="blackLink_2">Home</a>
-        <a class="blackLink_2" [routerLink]="['/routePath']">How-To</a>
-        <a class="blackLink_2" [routerLink]="['/routePath']">In Depth</a>
-        <a class="blackLink_2" [routerLink]="['/routePath']">News</a>
-        <a class="blackLink_2" [routerLink]="['/routePath']">Opinion</a>
-        <a class="blackLink_2" [routerLink]="['/routePath']">Service Updates</a>
-      </div>
+    <div class="links">
+      <span>Discover our blog:</span>
+      <a class="blackLink_2">Home</a>
+      <a class="blackLink_2" [routerLink]="['/routePath']">How-To</a>
+      <a class="blackLink_2" [routerLink]="['/routePath']">In Depth</a>
+      <a class="blackLink_2" [routerLink]="['/routePath']">News</a>
+      <a class="blackLink_2" [routerLink]="['/routePath']">Opinion</a>
+      <a class="blackLink_2" [routerLink]="['/routePath']">Service Updates</a>
     </div>
 
     <a [routerLink]="['/routePath']">
       <mat-card class="horizontal_card featured_article">
-        <div class="col"
-          style="background-image: url('../../assets/images/blog/nordlynx_lean-mean-1200x675-1.jpg');">
+        <div class="col" style="background-image: url('../../assets/images/blog/nordlynx_lean-mean-1200x675-1.jpg');">
         </div>
         <div class="col">
           <mat-card-content>
@@ -37,8 +27,7 @@
             <small>Service Updates · 2 min read</small>
           </mat-card-content>
           <mat-card-header>
-            <div mat-card-avatar
-              style="background-image: url('../../assets/images/blog/male.jpeg');"></div>
+            <div mat-card-avatar style="background-image: url('../../assets/images/blog/male.jpeg');"></div>
             <mat-card-title>Stephen Levine</mat-card-title>
             <mat-card-subtitle>Apr 22, 2020</mat-card-subtitle>
           </mat-card-header>
@@ -48,7 +37,7 @@
 
     <!-- generates 3 vertical cards in the row -->
     <div style="margin: 100px 0;">
-      <h3>Popular articles</h3>
+      <h4>Popular articles</h4>
       <div style="display: flex;">
         <a [routerLink]="['/routePath']" *ngFor="let article of popularArticles">
           <mat-card class="vertical_card">
@@ -63,7 +52,8 @@
             </div>
             <div>
               <mat-card-header>
-                <div mat-card-avatar style="background-image: url('../../assets/images/blog/{{article.authorAvatar}}');">
+                <div mat-card-avatar
+                  style="background-image: url('../../assets/images/blog/{{article.authorAvatar}}');">
                 </div>
                 <mat-card-title>{{article.authorName}}</mat-card-title>
                 <mat-card-subtitle>{{article.articleDate}}</mat-card-subtitle>
@@ -76,7 +66,7 @@
 
     <!-- generates horizontal cards -->
     <div style="margin: 100px 0;">
-      <h3>Recent articles</h3>
+      <h4>Recent articles</h4>
       <div>
         <a [routerLink]="['/routePath']" *ngFor="let article of articles">
           <mat-card class="horizontal_card">
@@ -90,7 +80,8 @@
                 <small>{{article.timeToRead}}</small>
               </mat-card-content>
               <mat-card-header>
-                <div mat-card-avatar style="background-image: url('../../assets/images/blog/{{article.authorAvatar}}');">
+                <div mat-card-avatar
+                  style="background-image: url('../../assets/images/blog/{{article.authorAvatar}}');">
                 </div>
                 <mat-card-title>{{article.authorName}}</mat-card-title>
                 <mat-card-subtitle>{{article.articleDate}}</mat-card-subtitle>
@@ -102,11 +93,8 @@
     </div>
 
     <!-- pagination -->
-    <div style="display: flex;justify-content: center;margin: 100px 0;">
-      <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
-      </mat-paginator>
-    </div>
+    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
 
   </div>
 </div>
-

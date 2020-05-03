@@ -1,7 +1,8 @@
 @import '../../styles.scss';
 
 form{
-  margin: 100px auto;
+  padding: 100px 0;
+  margin: auto;
   width: 30%;
 
       h2{
@@ -15,6 +16,11 @@ form{
 
       p span{
         margin-right: 10px;
+        font-weight: 500;
         color: $gray;
+      }
+
+      p a{
+        font-weight: 500;
       }
 }

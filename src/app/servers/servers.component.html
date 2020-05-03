@@ -21,10 +21,10 @@
 
   <div style="padding: 25px;">
     <!-- generates lists of servers by region -->
-    <div style="margin-bottom: 100px;" *ngFor="let server of servers">
-      <span style="font-size: 20px;font-weight: 500;">{{server.region}}</span>
-      <span style="font-size: 20px;font-weight: 500;padding-left: 10px;color: gray;">· {{server.count}} servers</span>
-      <hr style="margin: 25px 0;">
+    <div class="serverList" *ngFor="let server of servers">
+      <span class="regionName">{{server.region}}</span>
+      <span class="serverCount">· {{server.count}} servers</span>
+      <hr>
       <div class="countryList">
         <div class="country" *ngFor="let c of server.countries">
           <div>
@@ -42,24 +42,15 @@
         </div>
       </div>
     </div>
+    <hr>
   </div>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<div style="display: flex;justify-content: center;align-items: center;margin-bottom: 150px;">
+<div class="center" style="margin:100px 0;">
   <button mat-button class="redButton">Get NordVPN</button>
 </div>
+
 
 <div class="featuresBlock" style="background-color: #192438;color: white;">
   <div class="column">
@@ -75,7 +66,8 @@
   </div>
 </div>
 
-<div style="text-align: center;margin-top: 100px">
+
+<div class="grayBack center" style="padding: 100px 0">
   <h1>Specialty server types</h1>
   <p class="gray">Choose servers optimized for your individual needs.</p>
   <div class="serverTypes">
@@ -133,21 +125,15 @@
       </p>
     </div>
   </div>
+
+  <div class="center" style="margin-top: 50px;">
+    <button mat-button class="redButton">Get NordVPN</button>
+  </div>
+
 </div>
-<div style="display: flex;justify-content: center;align-items: center;margin-top: 25px;margin-bottom: 200px;">
-  <button mat-button class="redButton">Get NordVPN</button>
-</div>
 
 
-
-
-
-
-
-
-
-
-<div>
+<div style="margin: 100px 0;">
   <div class="center">
     <h1>Powered by user feedback</h1>
     <p class="gray">People say the nicest things about NordVPN.</p>
@@ -212,9 +198,7 @@
   </div>
 </div>
 
-
-
-<div class="center" style="margin: 100px 0;">
+<div class="center grayBack" style="padding: 100px 0;">
   <h1>Don’t have an account yet?</h1>
   <p class="gray">Sign up with NordVPN to get the ultimate online experience.</p>
   <div style="margin: 15px 0;">

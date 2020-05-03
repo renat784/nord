@@ -2,7 +2,8 @@
 
 
 .links{
-font-weight: 500;
+  font-weight: 500;
+  padding-top: 30px;
 
       span{
         color: $gray;
@@ -15,13 +16,6 @@ font-weight: 500;
       a:first-of-type{
         color: $red;
       }
-}
-
-
-
-
-mat-card:hover{
-  box-shadow: 2px 2px 2px 2px $gray;
 }
 
 
@@ -110,7 +104,7 @@ mat-card.horizontal_card{
 // vertical cards, width set to show 3 articles in a row
 mat-card.vertical_card{
   height: 375px;
-  margin: 15px;
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -146,4 +140,12 @@ mat-card.vertical_card{
                     color: $gray;
                   }
           }
+}
+
+
+mat-paginator{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  background-color: transparent !important;
 }
