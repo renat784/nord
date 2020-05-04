@@ -1,9 +1,15 @@
 <div class="yourIP">
-  <span>Your IP: 188.172.220.70</span>
+  <span>Your IP: {{ip}}</span>
   <span> · </span>
-  <span>ISP: Anexia</span>
+  <span>ISP: {{isp}}</span>
   <span> · </span>
-  <span>Your Status: <span style="color: red;">Unprotected</span></span>
+  <span>Country: {{country}}</span>
+  <span> · </span>
+  <img *ngIf="country != 'UNKNOWN'"  src="../../assets/images/servers/flags/{{country.toLowerCase()}}.svg">
+  <span> · </span>
+  <span>Your Status:</span>
+  <a class="redLink" style="margin-left: 5px;" matTooltip="To hide your IP address, you need to get the NordVPN app and connect to one of the servers."
+  [routerLink]="['/download']">Unprotected</a>
 </div>
 <nav>
   <a [routerLink]="['/']">

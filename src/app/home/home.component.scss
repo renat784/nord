@@ -23,8 +23,6 @@
               font-size: 35px;
               margin: 45px 0;
             }
-
-
       }
 }
 
@@ -36,34 +34,10 @@
   padding: 25px 0;
   justify-content: space-evenly;
   filter: grayscale(100);
-
 }
 
-.videoReviews {
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
 
-  .reviewer {
-    position: relative;
-    width: 30%;
-    background-size: cover;
-    height: 350px;
-    background-repeat: no-repeat;
 
-    .reviewer-text {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      padding-right: 15px;
-      text-align: left;
-
-      p:first-of-type {
-        font-weight: 500;
-      }
-    }
-  }
-}
 
 
 

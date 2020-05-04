@@ -29,6 +29,7 @@ import { SupportComponent } from './support/support.component';
 import { ErrorComponent } from './error/error.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LostPasswordComponent } from './lost-password/lost-password.component';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -65,6 +66,7 @@ import { RewiewersComponent } from './rewiewers/rewiewers.component';
     MatPaginatorModule,
     FormsModule,
     ReactiveFormsModule,
+    MatTooltipModule,
     MatListModule,
     MatExpansionModule,
     MatFormFieldModule,
