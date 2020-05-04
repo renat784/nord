@@ -1,0 +1,102 @@
+@import '../../styles.scss';
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+
+      a{
+        width: 24%;
+
+            mat-card {
+              font-size: 14px;
+              font-weight: 500;
+              padding: 30px 10px;
+              text-align: center;
+
+                  .exclusive{
+                    position: absolute;
+                    margin: 0;
+                    top: 0px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                        mat-chip{
+                          color: white;
+                          background-color: $blue;
+                        }
+                  }
+
+
+                  .price {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                        span {
+                          font-weight: 600;
+                          padding-right: 5px;
+                          font-size: 20px;
+                        }
+
+                        h1 {
+                          display: inline;
+                          font-size: 45px !important;
+                          font-weight: 600 !important;
+                        }
+                  }
+
+                  mat-chip-list {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15px;
+                  }
+
+                  button {
+                    margin: 25px 0;
+                    width: 100%;
+
+                  }
+
+                  button:hover{
+                    background-color: $black;
+                    color: white;
+                  }
+
+                  .card-bottom-text {
+
+                        span.noDiscount{
+                          color: $red;
+                          text-decoration: line-through;
+                        }
+
+                        span {
+                          color: $gray;
+                          padding-left: 10px;
+                        }
+                  }
+            }
+      }
+}
+
+
+mat-card.exclusive-deal {
+  border: 3px solid $blue !important;
+
+      button {
+        background-color: $blue;
+        color: white;
+      }
+
+      button:hover{
+        background-color: rgba($color: $blue, $alpha: 0.7) !important;
+        color: white;
+      }
+
+      mat-chip {
+        background-color: #fddce0;
+        color: $red;
+      }
+}

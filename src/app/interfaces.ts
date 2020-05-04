@@ -24,3 +24,12 @@ export interface Article{
 }
 
 
+export interface Plan{
+  name: string;
+  pricePerMonth: number;
+  discount: number;
+  totalPriceWithoutDiscount: string;
+  totalPriceWithDiscount: string;
+  exclusive: boolean;
+}
+

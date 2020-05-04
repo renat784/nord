@@ -1,94 +1,9 @@
-.cards {
-  display: flex;
-  justify-content: space-evenly;
-
-  mat-card {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 25px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.01);
-
-    .price {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .price span {
-      font-weight: 600;
-      padding-right: 5px;
-      font-size: 20px;
-    }
-    .price h1 {
-      display: inline;
-    }
-
-    mat-chip-list {
-      display: flex;
-      justify-content: center;
-      margin-top: 15px;
-    }
-
-    button {
-      margin: 25px 0;
-      width: 100%;
-    }
-
-    .card-bottom-text {
-      span:first-of-type {
-        color: red;
-        text-decoration: line-through;
-      }
-      span:last-of-type {
-        color: gray;
-        padding-left: 10px;
-      }
-    }
-  }
-
-  mat-card:hover {
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
-  }
-}
-
-mat-card.exclusive-deal {
-  border: 3px solid #4687ff !important;
-
-  button {
-    background-color: #4687ff;
-    color: white;
-  }
-
-  mat-chip {
-    background-color: pink;
-    color: red;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 .moreReasons{
   display: flex;
-  padding: 0 25px;
+  padding: 50px 25px;
 
     mat-icon{
       color: #4687ff;
@@ -102,7 +17,7 @@ mat-card.exclusive-deal {
 
 
 .techExperts{
-  margin: 100px 0;
+  padding: 50px 0;
   text-align: center;
 
     img{
@@ -113,6 +28,10 @@ mat-card.exclusive-deal {
 
     p{
       padding: 0 25px;
+
+        small:first-of-type{
+          font-weight: 500;
+        }
     }
 }
 
@@ -123,9 +42,9 @@ mat-card.exclusive-deal {
   justify-content: space-evenly;
   margin-top: 50px;
 
-  & img {
-    margin: 25px;
-  }
+    img {
+      margin: 25px;
+    }
 }
 
 
@@ -141,6 +60,7 @@ mat-card.exclusive-deal {
     p{
       color: gray;
     }
+
     mat-panel-title{
       font-weight: 500;
     }
@@ -152,8 +72,4 @@ mat-card.exclusive-deal {
     mat-expansion-panel-header{
       padding: 10px 25px;
     }
-
 }
-
-
-

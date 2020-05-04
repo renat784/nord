@@ -33,6 +33,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LostPasswordComponent } from './lost-password/lost-password.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { PlansComponent } from './plans/plans.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     PaymentComponent,
     SupportComponent,
     ErrorComponent,
-    LostPasswordComponent
+    LostPasswordComponent,
+    PlansComponent
   ],
   imports: [
     BrowserModule,

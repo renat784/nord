@@ -1,0 +1,25 @@
+<div class="cards" style="margin: 15px 0;">
+
+  <a [routerLink]="['/routePath']" *ngFor="let plan of plans" >
+    <mat-card [ngClass]="{'exclusive-deal' : plan.exclusive}">
+      <mat-chip-list *ngIf="plan.exclusive"  class="exclusive">
+        <mat-chip>Exclusive deal</mat-chip>
+      </mat-chip-list>
+      <span>{{plan.name}}</span>
+      <div class="price">
+        <span>$</span>
+        <h1>{{plan.pricePerMonth}}</h1>
+      </div>
+      <p>per month</p>
+      <mat-chip-list>
+        <mat-chip>Save {{plan.discount}}%</mat-chip>
+      </mat-chip-list>
+      <button mat-stroked-button>Get {{plan.name}}</button>
+      <p class="card-bottom-text">
+        <span class="noDiscount" *ngIf="plan.discount != 0" >${{plan.totalPriceWithoutDiscount}}</span>
+        <span>${{plan.totalPriceWithDiscount}}</span>
+      </p>
+    </mat-card>
+  </a>
+
+</div>

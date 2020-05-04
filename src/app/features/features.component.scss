@@ -1,9 +1,13 @@
-.column{
-  a{
-    margin-right: 15px;
-  }
+@import '../../styles.scss';
 
-  p{
-    color: gray;
-  }
+
+.column{
+
+    a{
+      margin-right: 15px;
+    }
+
+    p{
+      color: $gray;
+    }
 }
