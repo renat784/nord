@@ -34,6 +34,7 @@ import { LostPasswordComponent } from './lost-password/lost-password.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { PlansComponent } from './plans/plans.component';
+import { RewiewersComponent } from './rewiewers/rewiewers.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { PlansComponent } from './plans/plans.component';
     SupportComponent,
     ErrorComponent,
     LostPasswordComponent,
-    PlansComponent
+    PlansComponent,
+    RewiewersComponent
   ],
   imports: [
     BrowserModule,
