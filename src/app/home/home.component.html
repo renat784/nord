@@ -2,7 +2,29 @@
   <div class="column">
     <p>Online security starts with a click</p>
     <p class="discountTitle">Stay safe with the world's leading VPN</p>
-    <p class="countdown">00:10:00</p>
+    <div *ngIf="showCountdown"  class="countdown">
+
+      <div>
+        <span>{{days | number:'2.0'}}</span>
+        <span>days</span>
+      </div>
+      <span class="divider">:</span>
+      <div>
+        <span>{{hours | number:'2.0'}}</span>
+        <span>hours</span>
+      </div>
+      <span class="divider">:</span>
+      <div>
+        <span>{{minutes | number:'2.0'}}</span>
+        <span>minutes</span>
+      </div>
+      <span class="divider">:</span>
+      <div>
+        <span>{{seconds | number:'2.0'}}</span>
+        <span>seconds</span>
+      </div>
+    </div>
+
     <button class="redButton" mat-flat-button>Only Now 70% Off</button>
 
     <div class="iconCheck" style="justify-content: left;margin-top: 25px;">
