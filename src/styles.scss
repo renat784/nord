@@ -106,6 +106,8 @@ a:hover{
 // buttons:
 .blackButton{
   color: white;
+  font-size: 18px;
+  padding: 5px 20px !important;
   background-color: $black;
 }
 .blackButton:hover{
@@ -116,6 +118,8 @@ a:hover{
 
 .redButton{
   color: white;
+  font-size: 18px;
+  padding: 5px 20px !important;
   background-color: $red;
 }
 .redButton:hover{
@@ -125,6 +129,8 @@ a:hover{
 
 .redButtonOutLine{
   color: $red;
+  font-size: 18px;
+  padding: 5px 20px !important;
   border: 1px solid $red !important;
   background-color: transparent;
 }
@@ -136,6 +142,8 @@ a:hover{
 
 .blueButton{
   color: white;
+  font-size: 18px;
+  padding: 5px 20px !important;
   background-color: $blue;
 }
 .blueButton:hover{
@@ -222,35 +230,27 @@ a:hover{
 
 
 
-.moneyBack{
-  display: flex;
-  align-items: center;
-  padding: 50px 0;
+// .moneyBack{
+//   display: flex;
+//   align-items: center;
+//   padding: 50px 0;
 
-    div:first-of-type{
-      text-align: center;
-    }
+//     div:first-of-type{
+//       text-align: center;
+//     }
 
-    div{
-      width: 50%;
-      padding: 25px;
-    }
-    p{
-      color: gray;
-      margin: 25px 0;
-    }
-    img{
-      width: 50%;
-
-    }
-    button{
-      background-color: #f64f64;
-      color: white;
-    }
-    button:hover{
-      background-color:rgba($color: #f64f64, $alpha: 0.8) ;
-    }
-}
+//     div{
+//       width: 50%;
+//       padding: 25px;
+//     }
+//     p{
+//       color: gray;
+//       margin: 25px 0;
+//     }
+//     img{
+//       width: 50%;
+//     }
+// }
 
 
 
@@ -261,10 +261,25 @@ a:hover{
   background-color: #ffe5d3;
   border-radius: 5px;
   font-weight: 500;
+  display: flex;
 
         span{
           margin-left: 10px;
-          vertical-align: super;
+        }
+}
+
+
+.infoBlock{
+  padding: 25px;
+  color: $blue;
+  border: 1px solid $blue;
+  background-color: #dae7ff;
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+
+        span{
+          margin-left: 10px;
         }
 }
 
