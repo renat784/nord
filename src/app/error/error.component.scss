@@ -1,0 +1,23 @@
+@import '../../styles.scss';
+
+.errorBlock{
+  height: 450px;
+  background-image: url('../../assets/images/hero-404.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+      h1{
+        font-weight: 600 !important;
+      }
+
+      span{
+        color: $gray;
+        margin-top: 25px;
+        margin-bottom: 35px;
+      }
+}

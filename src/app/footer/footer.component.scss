@@ -1,65 +1,83 @@
+@import '../../styles.scss';
+
+
 footer{
   background-color: #151922;
   color: white;
   padding-left: 30px;
   padding-right: 30px;
+
+      .footerTitle{
+        padding-top: 125px;
+        padding-bottom: 40px;
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      .getMobileApps{
+        padding: 50px 0;
+
+            button{
+              width: 175px;
+              height: 60px;
+              background-color: #2c3038;
+              color: white;
+              padding: 0px;
+            }
+
+            button:first-of-type{
+              margin-right: 35px;
+            }
+      }
+
+      .footer-links{
+        display: flex;
+        justify-content: space-between;
+
+              mat-nav-list{
+                margin: 25px 0;
+
+                    h3{
+                      color: $gray;
+                      padding-left: 30px;
+                    }
+
+                    mat-list-item{
+
+                          a{
+                            color: white;
+                          }
+
+                          a:hover{
+                            color: rgba(255,255,255,0.5);
+                          }
+                    }
+              }
+      }
+
+      mat-form-field{
+
+            mat-label{
+              color: $gray;
+            }
+
+            ::ng-deep .mat-select-value-text{
+              color: white;
+            }
+      }
+
+      .followButton{
+        background-color: #2c3038;
+        margin-right: 10px;
+      }
+
+      .lowestBlock{
+        padding:50px 25px 100px 25px;
+        display: flex;
+        justify-content: space-between;
+
+            .paycards img{
+              padding-left: 5px;
+            }
+      }
 }
-
-.footerTitle{
-  padding-top: 125px;
-  padding-bottom: 40px;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.getMobileApps{
-  padding: 50px 0;
-
-    button{
-      width: 175px;
-      height: 60px;
-      background-color: #2c3038;
-      color: white;
-      padding: 0px;
-    }
-
-    button:first-of-type{
-      margin-right: 35px;
-    }
-}
-
-
-.footer-links{
-  display: flex;
-  justify-content: space-between;
-
-    mat-nav-list{
-      margin: 25px 0;
-    }
-    a{
-      color: white;
-    }
-    a:hover{
-      color: rgba(255,255,255,0.5);
-    }
-    h3{
-      color: gray;
-      padding-left: 30px;
-    }
-}
-
-.followButton{
-  background-color: #2c3038;
-  margin-right: 10px;
-}
-
-.paycards img{
-  padding-left: 5px;
-}
-
-
-mat-label{
-  color: white !important;
-}
-
-

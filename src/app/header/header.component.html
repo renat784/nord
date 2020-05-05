@@ -5,15 +5,17 @@
   <span> · </span>
   <span>Country: {{country}}</span>
   <span> · </span>
-  <img *ngIf="country != 'UNKNOWN'"  src="../../assets/images/servers/flags/{{country.toLowerCase()}}.svg">
+  <img *ngIf="country != 'UNKNOWN'" src="../../assets/images/servers/flags/{{country.toLowerCase()}}.svg">
   <span> · </span>
   <span>Your Status:</span>
-  <a class="redLink" style="margin-left: 5px;" matTooltip="To hide your IP address, you need to get the NordVPN app and connect to one of the servers."
-  [routerLink]="['/download']">Unprotected</a>
+  <a class="redLink" style="margin-left: 5px;"
+    matTooltip="To hide your IP address, you need to get the NordVPN app and connect to one of the servers."
+    [routerLink]="['/download']">Unprotected</a>
 </div>
+
 <nav>
   <a [routerLink]="['/']">
-    <img src="../../assets/images/nordvpn-logo.png"  alt="nordVpn logo">
+    <img src="../../assets/images/nordvpn-logo.png" alt="nordVpn logo">
   </a>
 
   <button mat-button [routerLink]="['/pricing']">Pricing</button>
@@ -25,7 +27,7 @@
 
   <div class="divider"></div>
 
-  <button mat-button  [matMenuTriggerFor]="menu">
+  <button mat-button [matMenuTriggerFor]="menu">
     <mat-icon>apps</mat-icon>
     <span style="padding-left: 10px;">Products</span>
   </button>
@@ -40,7 +42,7 @@
     </button>
 
     <button mat-button class="menuItem" (click)="goToUrl('https://nordvpnteams.com/')">
-      <mat-icon  svgIcon="nord-vpn-teams" aria-hidden="false" aria-label="nord vpn teams icon"></mat-icon>
+      <mat-icon svgIcon="nord-vpn-teams" aria-hidden="false" aria-label="nord vpn teams icon"></mat-icon>
       <div class="menu-item-text">
         <div>VPN business solutions</div>
         <span>NordVPN Teams</span>
@@ -63,7 +65,6 @@
       </div>
     </button>
   </mat-menu>
-
 
   <button mat-button [routerLink]="['/support']">
     <mat-icon>help</mat-icon>

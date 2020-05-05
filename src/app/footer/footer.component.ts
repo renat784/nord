@@ -8,6 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+
   selected = 'English';
 
   languages = [
@@ -19,6 +20,7 @@ export class FooterComponent implements OnInit {
   ];
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+
     iconRegistry.addSvgIcon(
       'google-play',
       sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/google-play.svg'));
@@ -28,24 +30,23 @@ export class FooterComponent implements OnInit {
       sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/app-store.svg'));
 
     iconRegistry.addSvgIcon(
-        'facebook',
-        sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/facebook.svg'));
+      'facebook',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/facebook.svg'));
 
     iconRegistry.addSvgIcon(
-          'twitter',
-          sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/twitter.svg'));
+      'twitter',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/twitter.svg'));
 
     iconRegistry.addSvgIcon(
-            'instagram',
-            sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/instagram.svg'));
+      'instagram',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/instagram.svg'));
 
     iconRegistry.addSvgIcon(
-              'youtube',
-              sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/youtube.svg'));
+      'youtube',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/youtube.svg'));
+  }
 
-    }
 
   ngOnInit(): void {
   }
-
 }

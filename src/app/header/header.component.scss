@@ -1,13 +1,5 @@
-nav{
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 10px;
-}
+@import '../../styles.scss';
 
-nav img{
-  width: 150px;
-  margin-right: 100px;
-}
 
 .yourIP{
   text-align: center;
@@ -23,31 +15,44 @@ nav img{
       }
 }
 
-.divider{
-  width: 1px;
-  background-color: black;
-  margin: 5px 10px;
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+
+      img{
+        width: 150px;
+        margin-right: 100px;
+      }
+
+      .divider{
+        width: 1px;
+        background-color: black;
+        margin: 5px 10px;
+      }
 }
 
 
 .menuItem{
   width: 100% ;
   text-align: left;
-}
 
-.menu-item-text{
-  display: inline-block;
-  margin-left: 15px;
-  position: relative;
+      .menu-item-text{
+        display: inline-block;
+        margin-left: 15px;
+        position: relative;
 
-  div{
-    padding-bottom: 20px;
-  }
-  span{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    color: gray;
-    font-size: 11px;
-  }
+            div{
+              padding-bottom: 20px;
+            }
+
+            span{
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              color: $gray;
+              font-size: 11px;
+            }
+      }
 }

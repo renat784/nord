@@ -16,7 +16,6 @@
               font-size: 50px;
               line-height: normal;
               font-weight: 500;
-
             }
 
             button{
@@ -50,7 +49,6 @@
 }
 
 
-
 .rewiers-line {
   background-color: $grayBack;
   display: flex;
@@ -60,11 +58,6 @@
 }
 
 
-
-
-
-
-
 .availablePlatforms{
   display: flex;
   margin-bottom: 30px;
@@ -72,14 +65,15 @@
       a {
         margin-left: 10px;
 
-        img{
-          width: 25px;
+            img{
+              width: 25px;
+            }
       }
-      }
+
       a:hover{
 
-        img{
-          filter: invert(47%) sepia(56%) saturate(4321%) hue-rotate(325deg) brightness(101%) contrast(93%);
-        }
+            img{
+              filter: invert(47%) sepia(56%) saturate(4321%) hue-rotate(325deg) brightness(101%) contrast(93%);
+            }
       }
 }

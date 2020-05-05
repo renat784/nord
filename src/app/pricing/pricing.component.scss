@@ -1,18 +1,19 @@
-
+@import '../../styles.scss';
 
 
 .moreReasons{
   display: flex;
   padding: 50px 25px;
 
-    mat-icon{
-      color: #4687ff;
-      margin: 25px 0;
-    }
-    p{
-      color: gray;
-      padding-right: 15px;
-    }
+      mat-icon{
+        color: $blue;
+        margin: 25px 0;
+      }
+
+      p{
+        color: $gray;
+        padding-right: 15px;
+      }
 }
 
 
@@ -20,47 +21,44 @@
   padding: 50px 0;
   text-align: center;
 
-    img{
-      width : 75px;
-      margin-top: 50px;
-      margin-bottom: 15px;
-    }
+      img{
+        width : 75px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
 
-    p{
-      padding: 0 25px;
+      p{
+        padding: 0 25px;
 
-        small:first-of-type{
-          font-weight: 500;
-        }
-    }
+            small:first-of-type{
+              font-weight: 500;
+            }
+      }
 }
-
-
-
 
 
 .FAQ{
   width: 70%;
   margin: 150px auto;
 
-    h1{
-      text-align: center;
-      margin-bottom: 50px;
-    }
+      h1{
+        text-align: center;
+        margin-bottom: 50px;
+      }
 
-    p{
-      color: gray;
-    }
+      p{
+        color: $gray;
+      }
 
-    mat-panel-title{
-      font-weight: 500;
-    }
+      mat-panel-title{
+        font-weight: 500;
+      }
 
-    mat-expansion-panel{
-      margin: 25px 0;
-    }
+      mat-expansion-panel{
+        margin: 25px 0;
+      }
 
-    mat-expansion-panel-header{
-      padding: 10px 25px;
-    }
+      mat-expansion-panel-header{
+        padding: 10px 25px;
+      }
 }

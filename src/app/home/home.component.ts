@@ -18,13 +18,10 @@ export class HomeComponent implements OnInit {
   // in seconds
   timeLeft = 10;
 
-
-
   constructor() { }
 
   ngOnInit(): void {
-   this.startTimer();
-
+    this.startTimer();
   }
 
   startTimer() {
@@ -32,39 +29,37 @@ export class HomeComponent implements OnInit {
       if (this.timeLeft > 0) {
         this.timeLeft--;
 
-
         // more than 60 sec
-        if(this.timeLeft > 60){
+        if (this.timeLeft > 60) {
 
-            // more than 60 minutes
-            if((this.timeLeft / 60) > 60){
+          // more than 60 minutes
+          if ((this.timeLeft / 60) > 60) {
 
-                // more than 24 hours
-                if((this.timeLeft / (60 * 60)) > 24){
+            // more than 24 hours
+            if ((this.timeLeft / (60 * 60)) > 24) {
 
-                  this.days = this.getWholeNumber(this.timeLeft / (60 * 60 * 24));
-                  this.hours = this.getWholeNumber((this.timeLeft - this.days * 60 * 60 * 24) / (60 * 60));
-                  this.minutes = this.getWholeNumber((this.timeLeft - this.days * 60 * 60 * 24 - this.hours * 60 * 60) / 60);
-                  this.seconds = this.timeLeft - this.days * 60 * 60 * 24 - this.hours * 60 * 60  - this.minutes * 60;
+              this.days = this.getWholeNumber(this.timeLeft / (60 * 60 * 24));
+              this.hours = this.getWholeNumber((this.timeLeft - this.days * 60 * 60 * 24) / (60 * 60));
+              this.minutes = this.getWholeNumber((this.timeLeft - this.days * 60 * 60 * 24 - this.hours * 60 * 60) / 60);
+              this.seconds = this.timeLeft - this.days * 60 * 60 * 24 - this.hours * 60 * 60 - this.minutes * 60;
 
-                // less than 24 hours
-                }else{
-                  this.hours = this.getWholeNumber(this.timeLeft / (60 * 60));
-                  this.minutes = this.getWholeNumber((this.timeLeft - this.hours * 60 * 60) / 60);
-                  this.seconds = this.timeLeft - this.hours * 60 * 60 - this.minutes * 60;
-                }
+              // less than 24 hours
+            } else {
+              this.hours = this.getWholeNumber(this.timeLeft / (60 * 60));
+              this.minutes = this.getWholeNumber((this.timeLeft - this.hours * 60 * 60) / 60);
+              this.seconds = this.timeLeft - this.hours * 60 * 60 - this.minutes * 60;
             }
-            // less than 60 minutes
-            else{
-              this.minutes = this.getWholeNumber(this.timeLeft / 60);
-              this.seconds = this.timeLeft - this.minutes * 60;
-            }
+          }
+          // less than 60 minutes
+          else {
+            this.minutes = this.getWholeNumber(this.timeLeft / 60);
+            this.seconds = this.timeLeft - this.minutes * 60;
+          }
 
-        // less than 60 sec
-        }else{
+          // less than 60 sec
+        } else {
           this.seconds = this.timeLeft;
         }
-
 
       } else {
         this.pauseTimer();
@@ -74,7 +69,8 @@ export class HomeComponent implements OnInit {
   }
 
   //  returns whole number, for example 2.14 returns 2
-  getWholeNumber(val){
+  getWholeNumber(val) {
+    // tslint:disable-next-line: radix
     return parseInt(val.toString().split('.')[0]);
   }
 

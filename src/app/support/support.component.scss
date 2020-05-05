@@ -10,6 +10,7 @@
 
     h1{
       color: white;
+      font-weight: 600 !important;
     }
 
     form{
@@ -20,7 +21,7 @@
               width: 100%;
 
                     mat-label{
-                      color: $black;
+                      color: white;
                       font-weight: 500;
                     }
 
@@ -32,22 +33,16 @@
 
                     mat-hint{
                       text-align: right;
-                      color: white;
+                      color: black;
                     }
 
                     mat-icon{
                       cursor: pointer;
+                      color: white;
                     }
-
             }
     }
 }
-
-
-
-
-
-
 
 
 .category{
@@ -89,25 +84,25 @@
 }
 
 
-
 .topQuestions{
   width: 60%;
   margin: 150px auto;
 
-    h1{
-      margin-bottom: 100px;
-      text-align: center;
-    }
-    div a{
-      display: flex;
-      color: $black;
-      font-size: 16px;
-      justify-content: space-between;
-      margin: 30px 0;
-      font-weight: 500;
-
-      &:hover{
-        color: $blue;
+      h1{
+        margin-bottom: 100px;
+        text-align: center;
       }
-    }
+
+      div a{
+        display: flex;
+        color: $black;
+        font-size: 16px;
+        justify-content: space-between;
+        margin: 30px 0;
+        font-weight: 500;
+
+        &:hover{
+          color: $blue;
+        }
+      }
 }
