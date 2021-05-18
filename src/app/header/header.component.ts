@@ -18,19 +18,19 @@ export class HeaderComponent implements OnInit {
 
     iconRegistry.addSvgIcon(
       'nord-vpn',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordvpn-blue.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/nordvpn-blue.svg'));
 
     iconRegistry.addSvgIcon(
       'nord-vpn-teams',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordvpn-teams.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/nordvpn-teams.svg'));
 
     iconRegistry.addSvgIcon(
       'nord-pass',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordpass-green.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/nordpass-green.svg'));
 
     iconRegistry.addSvgIcon(
       'nord-locker',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/nordlocker-48.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/nordlocker-48.svg'));
   }
 
   ngOnInit(): void {
@@ -40,7 +40,10 @@ export class HeaderComponent implements OnInit {
     const location = 'location';
     const country = 'country';
 
-    this.http.get('https://geo.ipify.org/api/v1?apiKey=at_iTgEkmGkhiwDRIeJPOvjIqFxgG9BC&ipAddress').subscribe(data => {
+    this.http.get('https://geo.ipify.org/api/v1?apiKey=at_iTgEkmGkhiwDRIeJPOvjIqFxgG9BC&ipAddress')
+    .subscribe(data => {
+      console.log(data);
+
       this.ip = data[ip];
       this.isp = data[isp];
       this.country = data[location][country];

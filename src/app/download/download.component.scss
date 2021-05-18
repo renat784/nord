@@ -7,6 +7,10 @@ mat-nav-list{
 
       .mat-list-item{
         height: 75px;
+
+        img {
+          height: 25px;
+        }
       }
 
       a{
@@ -30,7 +34,6 @@ mat-nav-list{
       }
 }
 
-
 .osCard{
   display: flex;
   justify-content: center;
@@ -48,9 +51,9 @@ mat-nav-list{
         align-items: center;
       }
 
-      img{
-        width: 50px;
-      }
+
+
+
 
       p{
         margin-top: 25px;

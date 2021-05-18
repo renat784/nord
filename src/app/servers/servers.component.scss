@@ -2,7 +2,7 @@
 
 
 .serverTop{
-  background-image: url('../../assets/images/servers/world.jpg');
+  background-image: url('/assets/Images/servers/world.jpg');
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
       }
 
       ul{
-        list-style-image: url('../../assets/images/servers/checked.svg');
+        list-style-image: url('/assets/Images/servers/checked.svg');
         margin-left: 20px;
 
             li{

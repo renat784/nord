@@ -23,27 +23,27 @@ export class FooterComponent implements OnInit {
 
     iconRegistry.addSvgIcon(
       'google-play',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/google-play.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/google-play.svg'));
 
     iconRegistry.addSvgIcon(
       'app-store',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/app-store.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/app-store.svg'));
 
     iconRegistry.addSvgIcon(
       'facebook',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/facebook.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/facebook.svg'));
 
     iconRegistry.addSvgIcon(
       'twitter',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/twitter.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/twitter.svg'));
 
     iconRegistry.addSvgIcon(
       'instagram',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/instagram.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/instagram.svg'));
 
     iconRegistry.addSvgIcon(
       'youtube',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/images/youtube.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/Images/youtube.svg'));
   }
 
 
