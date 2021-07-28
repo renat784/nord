@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   showCountdown = true;
@@ -16,9 +15,9 @@ export class HomeComponent implements OnInit {
   seconds = 0;
 
   // in seconds
-  timeLeft = 10;
+  timeLeft = 30;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.startTimer();
@@ -31,23 +30,34 @@ export class HomeComponent implements OnInit {
 
         // more than 60 sec
         if (this.timeLeft > 60) {
-
           // more than 60 minutes
-          if ((this.timeLeft / 60) > 60) {
-
+          if (this.timeLeft / 60 > 60) {
             // more than 24 hours
-            if ((this.timeLeft / (60 * 60)) > 24) {
-
+            if (this.timeLeft / (60 * 60) > 24) {
               this.days = this.getWholeNumber(this.timeLeft / (60 * 60 * 24));
-              this.hours = this.getWholeNumber((this.timeLeft - this.days * 60 * 60 * 24) / (60 * 60));
-              this.minutes = this.getWholeNumber((this.timeLeft - this.days * 60 * 60 * 24 - this.hours * 60 * 60) / 60);
-              this.seconds = this.timeLeft - this.days * 60 * 60 * 24 - this.hours * 60 * 60 - this.minutes * 60;
+              this.hours = this.getWholeNumber(
+                (this.timeLeft - this.days * 60 * 60 * 24) / (60 * 60)
+              );
+              this.minutes = this.getWholeNumber(
+                (this.timeLeft -
+                  this.days * 60 * 60 * 24 -
+                  this.hours * 60 * 60) /
+                  60
+              );
+              this.seconds =
+                this.timeLeft -
+                this.days * 60 * 60 * 24 -
+                this.hours * 60 * 60 -
+                this.minutes * 60;
 
               // less than 24 hours
             } else {
               this.hours = this.getWholeNumber(this.timeLeft / (60 * 60));
-              this.minutes = this.getWholeNumber((this.timeLeft - this.hours * 60 * 60) / 60);
-              this.seconds = this.timeLeft - this.hours * 60 * 60 - this.minutes * 60;
+              this.minutes = this.getWholeNumber(
+                (this.timeLeft - this.hours * 60 * 60) / 60
+              );
+              this.seconds =
+                this.timeLeft - this.hours * 60 * 60 - this.minutes * 60;
             }
           }
           // less than 60 minutes
@@ -60,7 +70,6 @@ export class HomeComponent implements OnInit {
         } else {
           this.seconds = this.timeLeft;
         }
-
       } else {
         this.pauseTimer();
         this.showCountdown = false;
